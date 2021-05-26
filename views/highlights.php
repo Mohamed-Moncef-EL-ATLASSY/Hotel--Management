@@ -24,9 +24,10 @@ if (isset($_POST['disconnect']))
             </ul>
 
             <div class="text-end">
-            <form action="logout" method="POST">
-                    <input type="submit" title="logout" name="logout" class="btn btn-outline-primary" value="Log Out"></input>
-					</a>
+                <form action="logout" method="POST">
+                    <input type="submit" title="logout" name="logout" class="btn btn-outline-primary"
+                        value="Log Out"></input>
+                    </a>
                 </form>
             </div>
         </div>
@@ -35,44 +36,110 @@ if (isset($_POST['disconnect']))
 
 <body>
 
-<style>
-<?php include 'style/style-home/home.css'; ?>
-</style>
+    <style>
+        <?php include 'style/style-home/home.css';
+        ?>
+    </style>
+
+
+
+
 
 
     <div class="container-fluid p-4">
+
+
         <div class="container">
             <div class="row">
-                <div class="col-4">
-                    <img src="./views/images/hotel_img/home2.jpg" class="img-fluid" alt="Highlight picture number one">
-                </div>
-                <div class="col-4">
-                    <img src="./views/images/hotel_img/home1.jpg" class="img-fluid" alt="Highlight picture number two">
-                </div>
-                <div class="col-4  pb-4">
-                    <img src="./views/images/hotel_img/home3.jpg" class="img-fluid" alt="Highlight picture number three">
-                </div>
-                <div class="col-4">
-                    <img src="./views/images/hotel_img/home4.jpg" class="img-fluid" alt="Highlight picture number four">
-                </div>
-                <div class="col-4  pb-3">
-                    <img src="./views/images/hotel_img/home6.jpg" class="img-fluid" alt="Highlight picture number five">
-                </div>
-                <div class="col-4">
-                    <img src="./views/images/hotel_img/home7.jpg" class="img-fluid" alt="Highlight picture number six">
-                </div>
-                <div class="col-4">
-                    <img src="./views/images/hotel_img/home8.jpg" class="img-fluid" alt="Highlight picture number seven">
-                </div>
-                <div class="col-4">
-                    <img src="./views/images/hotel_img/home9.jpg" class="img-fluid" alt="Highlight picture number eight">
-                </div>
-                <div class="col-4">
-                    <img src="./views/images/hotel_img/home10.jpg" class="img-fluid" alt="Highlight picture number ten">
-                </div>
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6"
+                            aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7"
+                            aria-label="Slide 8"></button>
+                    </div>
 
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center">
+                                <img src="./views/images/hotel_img/home2.jpg" width="70%" height="70%" class="img-fluid"
+                                    alt="Highlight picture number one">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="./views/images/hotel_img/home1.jpg" width="72%" height="72%" class="img-fluid"
+                                    alt="Highlight picture number two">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="./views/images/hotel_img/home4.jpg" width="69%" height="69%" class="img-fluid"
+                                    alt="Highlight picture number three">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="./views/images/hotel_img/home6.jpg" width="56%" height="56%" class="img-fluid"
+                                    alt="Highlight picture number four">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="./views/images/hotel_img/home7.jpg" width="70%" height="70%" class="img-fluid"
+                                    alt="Highlight picture number five">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="./views/images/hotel_img/home8.jpg" width="70%" height="70%" class="img-fluid"
+                                    alt="Highlight picture number six">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="./views/images/hotel_img/home9.jpg" width="70%" height="70%" class="img-fluid"
+                                    alt="Highlight picture number seven">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="./views/images/hotel_img/home10.jpg" width="64%" height="64%"
+                                    class="img-fluid" alt="Highlight picture number eight">
+                            </div>
+                        </div>
+
+
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 </body>
 
 
@@ -81,13 +148,15 @@ if (isset($_POST['disconnect']))
 
     <div class="container py-5" id="icon-grid">
         <div class="row row-cols-4 g-4 py-5">
- 
+
             <div class="col d-flex align-items-start">
                 <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
                     <use xlink:href="#toggles2" /></svg>
                 <div>
                     <h4 class="fw-bold mb-0">About Us</h4>
-                    <p>Founded in 2021 in Morocco, Bivago has grown from a small Moroccan startup to one of the world’s leading digital travel companies. Bivago’s mission is to make it easier for everyone to experience the world.</p>
+                    <p>Founded in 2021 in Morocco, Bivago has grown from a small Moroccan startup to one of the world’s
+                        leading digital travel companies. Bivago’s mission is to make it easier for everyone to
+                        experience the world.</p>
                 </div>
             </div>
             <div class="col d-flex align-items-start">

@@ -34,7 +34,7 @@ class UserController{
 			else if($result->email === $_POST['email'] && $result->password === $_POST['password']){
 				$_SESSION['loggedIn'] = true;
 				$_SESSION['email'] = $result->email;
-				Redirect::to('home_user');
+				Redirect::to('bivago');
 			}
             else{
 				Session::set('error','The email address or password is incorrect. Please try again...');
