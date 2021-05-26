@@ -1,0 +1,6 @@
+Options All -Indexes
+
+RewriteEngine On 
+
+RewriteBase /bivago/
+RewriteRule ^([-a-zA-Z0-9_]+)$ index.php?page=$1
