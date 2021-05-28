@@ -69,7 +69,7 @@ if (isset($_POST['disconnect']))
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star "></span>
                             </div>
                         </div>
                     </div>
@@ -105,7 +105,7 @@ if (isset($_POST['disconnect']))
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star-half-o"></span>
+                                <span class="fas fa-star-half"></span>
                             </div>
                         </div>
                     </div>
@@ -192,7 +192,7 @@ if (isset($_POST['disconnect']))
 
 <footer>
 
-    <div class="container py-5" id="icon-grid">
+    <div class="container mt-5 text-white bg-dark" id="icon-grid">
         <div class="row row-cols-4 g-4 py-5">
  
             <div class="col d-flex align-items-start">
@@ -223,7 +223,8 @@ if (isset($_POST['disconnect']))
                 <div>
                     <h4 class="fw-bold mb-0">Socials</h4>
                     <p>Follow us so you dont miss our offers!</p>
-                    <img src=".\views\images\icons\facebook.png" alt="facebook" width="30" height="30">
+
+                    <img src=".\views\images\icons\facebook.png" alt="facebook" width="30" height="30" >
                     <img src=".\views\images\icons\instagram.png" alt="instagram" width="30" height="30">
                     <img src=".\views\images\icons\twitter.png" alt="twitter" width="30" height="30">
                     <img src=".\views\images\icons\youtube.png" alt="youtube" width="30" height="30">

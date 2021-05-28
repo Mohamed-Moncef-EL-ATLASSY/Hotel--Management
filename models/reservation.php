@@ -79,16 +79,6 @@ class Reservation {
         $statement = null;
     }
 
-    // static public function reserve($id_reservation_fk,$id_customer_fk){
-    //     echo 'here';
-    //     $query ='INSERT INTO reserve (id_reservation_fk, id_customer_fk) values (:id_reservation_fk,:id_customer_fk)';
-    //     echo 'here';
-    //     $statement = connect::connect()->prepare($query);
-    //     echo 'here';
-    //     $statement->execute(array(":id_reservation_fk" => $id_reservation_fk,":id_customer_fk" => $id_customer_fk));
-    //     Redirect::to('home');
-    // }
-
     static public function delete($data){
         $id = $data['id'];
         try{
@@ -101,7 +91,6 @@ class Reservation {
 
         }
     }
-
 
     static public function getReservation($data){
         $id = $data['id'];
@@ -119,10 +108,5 @@ class Reservation {
         }
     }
 }
-
-
-
-
-
 
 ?>

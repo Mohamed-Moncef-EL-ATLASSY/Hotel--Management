@@ -43,16 +43,6 @@ class reservationController{
         }
     }
 
-    // public function reserveReservation(){
-    //     if(isset($_POST['reserve'])){
-            
-    //         $id_reservation_fk = $_POST['id_reservation_fk'];
-    //         $id_customer_fk = $_POST['id_customer_fk'];
-            
-    //         $result = Reservation::reserve($id_reservation_fk,$id_customer_fk);
-    //     }
-    // }
-
 
     public function updateReservation(){
         if(isset($_POST['submit'])){

@@ -2,13 +2,6 @@
     $data = new reservationController();
     $reservations = $data->getAllReservations();
 
-    // if(isset($_POST['id_reservation_fk'])){
-        
-    //         $existReservation = new reservationController();
-    //         $existReservation->reserveReservation();
-    //         Redirect::to('home_user');
-        
-    // }
 ?>
 
 <head>
@@ -77,8 +70,6 @@
                         <td class="d-flex justify-content-around">
                             
                             <form method="post" class="mr-1" action="view">
-                                <input type="hidden" name="id_reservation_fk" value="<?php echo $reservation['id'];?>">
-                                <input type="hidden" name="id_customer_fk" value="<?php echo 8?>">
                                 <button name="reserve" class="btn btn-sm btn-info"><i class="fa fa-hotel"> View Reservation</i></button>
                             </form>
                         </td>

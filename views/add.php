@@ -60,7 +60,6 @@
                             <label for="bed_type">Bed Type (Select bed type)</label>
                             <select class="form-control" name="bed_type" required>
                                 <option selected disabled>Bed type</option>
-
                                 <option value="Double Bed">Double Bed</option>
                                 <option value="2 Single Beds">2 Single Beds</option>
                             </select>
@@ -80,10 +79,9 @@
                                 <label for="kids1" >Kids aged 2- years old</label>
                                 <select name="kid0_2yo" required>
                                     <option selected disabled >Kids age 2-</option>
-
                                     <?php
                                     
-                                for ($i=0; $i<=4; $i++)
+                                for ($i=0; $i<=8; $i++)
                                 {
                                     ?>
                                     <option value="<?php echo $i;?>"><?php echo $i;?></option>
@@ -98,7 +96,7 @@
                                     <option selected disabled>Kids age 2 to 14yo</option>
 
                                     <?php
-                                for ($i=0; $i<=4; $i++)
+                                for ($i=0; $i<=8; $i++)
                                 {
                                     ?>
                                     <option value="<?php echo $i;?>"><?php echo $i;?></option>
@@ -113,7 +111,7 @@
                                     <option selected disabled>Kids age 14+</option>
 
                                     <?php
-                                for ($i=0; $i<=4; $i++)
+                                for ($i=0; $i<=8; $i++)
                                 {
                                     ?>
                                     <option value="<?php echo $i;?>"><?php echo $i;?></option>

@@ -146,17 +146,15 @@ if (isset($_POST['disconnect']))
 
 <footer>
 
-    <div class="container py-5" id="icon-grid">
+    <div class="container mt-5 text-white bg-dark" id="icon-grid">
         <div class="row row-cols-4 g-4 py-5">
-
+ 
             <div class="col d-flex align-items-start">
                 <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
                     <use xlink:href="#toggles2" /></svg>
                 <div>
                     <h4 class="fw-bold mb-0">About Us</h4>
-                    <p>Founded in 2021 in Morocco, Bivago has grown from a small Moroccan startup to one of the world’s
-                        leading digital travel companies. Bivago’s mission is to make it easier for everyone to
-                        experience the world.</p>
+                    <p>Founded in 2021 in Morocco, Bivago has grown from a small Moroccan startup to one of the world’s leading digital travel companies. Bivago’s mission is to make it easier for everyone to experience the world.</p>
                 </div>
             </div>
             <div class="col d-flex align-items-start">
@@ -179,7 +177,8 @@ if (isset($_POST['disconnect']))
                 <div>
                     <h4 class="fw-bold mb-0">Socials</h4>
                     <p>Follow us so you dont miss our offers!</p>
-                    <img src=".\views\images\icons\facebook.png" alt="facebook" width="30" height="30">
+
+                    <img src=".\views\images\icons\facebook.png" alt="facebook" width="30" height="30" >
                     <img src=".\views\images\icons\instagram.png" alt="instagram" width="30" height="30">
                     <img src=".\views\images\icons\twitter.png" alt="twitter" width="30" height="30">
                     <img src=".\views\images\icons\youtube.png" alt="youtube" width="30" height="30">
@@ -191,7 +190,6 @@ if (isset($_POST['disconnect']))
     </div>
 
 </footer>
-
 
 
 
