@@ -25,8 +25,9 @@ if (isset($_POST['disconnect']))
 
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="bivago" class="nav-link px-2 text-white">Home</a></li>
-                <li><a href="home_user" class="nav-link px-2 text-white">Reserve</a></li>
+                <li><a href="home" class="nav-link px-2 text-white">Reserve</a></li>
                 <li><a href="highlights" class="nav-link px-2 text-white">Highlights</a></li>
+                <li><a href="coming-soon" class="nav-link px-2 text-white">New Hotel</a></li>
             </ul>
 
             <div class="text-end">
@@ -97,7 +98,7 @@ if (isset($_POST['disconnect']))
                                 <h5>Reviews (67 rating)</h5>
                                 <style>
                                     .checked,
-                                    .fa-star-half-o {
+                                    .fa-star-half{
                                         color: orange;
                                     }
                                 </style>

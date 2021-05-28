@@ -1,15 +1,12 @@
 <?php
 
 require_once './autoload.php';
-// require_once './database/connect.php';
 require_once './controllers/homeController.php';
-// require_once './controllers/userController.php';
-// require_once './models/user.php';
 require_once './views/includes/header.php';
 
 
 $home = new homeController();
-$pages = ['home', 'home_user', 'bivago', 'highlights', 'reserve', 'add', 'delete', 'update', 'signup', 'login' , 'logout'];
+$pages = ['home', 'home_user', 'bivago', 'highlights', 'reserve', 'coming-soon' , 'add', 'delete', 'update', 'signup', 'login' , 'logout'];
 
 if(isset($_SESSION['loggedIn']) && ($_SESSION['loggedIn']) === true ){
     if(isset($_GET['page'])){
