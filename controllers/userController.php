@@ -6,10 +6,10 @@ class UserController{
     {
         if (isset($_POST['submit'])) {
             $data = array(
-                'first_name' => $_POST['fname'],
-                'last_name' => $_POST['lname'],
-                'email' => $_POST['email'],
-                'password' => $_POST['password'],
+                'first_name'   => $_POST['fname'],
+                'last_name'    => $_POST['lname'],
+                'email'        => $_POST['email'],
+                'password'     => $_POST['password'],
             );
             $result = User::createUser($data);
             if($result === 'ok'){
