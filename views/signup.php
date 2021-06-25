@@ -33,7 +33,7 @@
         <h1 class="h3 mb-3 fw-normal">Sign up</h1>
 
         <div class="form-floating">
-            <input type="text" class="form-control" id="floatingInput" placeholder="First name" name="fname">
+            <input type="text" class="form-control" id="floatingInput" placeholder="First name" name="fname" >
             <label for="floatingInput">First name</label>
         </div>
 
@@ -53,7 +53,7 @@
         </div>
         <div class="checkbox mb-3">
             <label>
-                <input type="checkbox" value="remember-me"> I have read and agree to the privacy policy
+                <input type="checkbox" value="privacy-policy"> I have read and agree to the privacy policy
             </label>
         </div>
         <button class="w-100 btn btn-lg btn-primary mb-3 " type="submit" name="submit">Sign up</button>

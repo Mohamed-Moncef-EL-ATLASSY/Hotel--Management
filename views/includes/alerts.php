@@ -10,6 +10,6 @@
 	}
 
 	if(isset($_COOKIE['info'])){
-		echo '<div class="alert alert-warning">'.$_COOKIE['info'].'</div>';
+		echo '<div class="alert alert-info">'.$_COOKIE['info'].'</div>';
 	}
 ?>

@@ -6,7 +6,7 @@
 ?>
 
 <head>
-    <title>Admin Page - Bivago</title>
+    <title>Reservation Page - Bivago</title>
 </head>
 
 <header class="p-3 bg-dark text-white">
@@ -16,7 +16,13 @@
                 <img src="./views/images/bivago-removed.png" alt="Bivago" width="80" height="80">
             </a>
 
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"> </ul>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="bivago" class="nav-link px-2 text-white">Home</a></li>
+                <li><a href="home" class="nav-link px-2 text-white">Reserve</a></li>
+                <li><a href="highlights" class="nav-link px-2 text-white">Highlights</a></li>
+                <li><a href="coming-soon" class="nav-link px-2 text-white">New Hotel</a></li>
+            </ul>
+
             <div class="text-end">
             <form action="logout" method="POST">
                     <input type="submit" title="logout" name="logout" class="btn btn-outline-primary" value="Log Out"></input>
@@ -36,9 +42,7 @@
                 <a href="<?php echo BASE_URL;?>add" class="btn btn-lg btn-primary mr-2 mb-2 ">
                     <i class="fas fa-plus">   New Reservation</i>
                 </a>
-                <!-- <a href="<?php echo BASE_URL;?>add" class="btn btn-lg btn-primary mr-2 mb-2 ">
-                    <i class="fas fa-plus">   New Reservation</i>
-                </a> -->
+
 
                 <thead>
                     <tr>

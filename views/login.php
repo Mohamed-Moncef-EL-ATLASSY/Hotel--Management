@@ -16,6 +16,7 @@
 
 <body class="text-center">
 
+
 <style>
 <?php include 'style/style-login/login.css'; ?>
 </style>
@@ -27,16 +28,16 @@
         <?php include('./views/includes/alerts.php');?>
         <h1 class="h3 mb-3 fw-normal">Log in</h1>
         <div class="form-floating">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email"  >
             <label for="floatingInput">Email address</label>
         </div>
         <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" >
             <label for="floatingPassword">Password</label>
         </div>
         <div class="checkbox mb-3">
             <label>
-                <input type="checkbox" value="remember-me"> Remember me
+                <input type="checkbox" value="remember-me" name="remember"> Remember me
             </label>
         </div>
         <button class="w-100 btn btn-lg btn-primary mb-3" type="submit" name="submit">Log in</button>
@@ -47,6 +48,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
     </script>
+
 </body>
 
 </html>

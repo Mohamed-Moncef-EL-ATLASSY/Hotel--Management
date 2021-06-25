@@ -1,7 +1,7 @@
 <?php
 
 require_once './autoload.php';
-require_once './controllers/homeController.php';
+// require_once './controllers/homeController.php';
 require_once './views/includes/header.php';
 
 
@@ -18,16 +18,15 @@ if(isset($_SESSION['loggedIn']) && ($_SESSION['loggedIn']) === true ){
             include('views/includes/404.php');
         }
     }
-
     require_once './views/includes/footer.php';
-
     }
 
     else if(isset($_GET['page']) && $_GET['page'] === 'signup'){
 	$home->index('signup');
     }
+
     else{
         $home->index('login');
     }
-    
+
 ?>

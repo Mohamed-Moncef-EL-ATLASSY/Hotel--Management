@@ -22,7 +22,7 @@
 
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="bivago" class="nav-link px-2 text-white">Home</a></li>
-                <li><a href="home_user" class="nav-link px-2 text-white">Reserve</a></li>
+                <li><a href="home" class="nav-link px-2 text-white">Reserve</a></li>
                 <li><a href="highlights" class="nav-link px-2 text-white">Highlights</a></li>
                 <li><a href="coming-soon" class="nav-link px-2 text-white">New Hotel</a></li>
             </ul>
@@ -75,14 +75,15 @@
                         </div>
 
                         <!-- set for kids -->
-                        <div class="container fluid d-flex justify-content-around my-2">
-                            <div class="form-group mt-2">
+
+                        <div class="container fluid d-flex justify-content-around my-2" id="kidsection">
+                            <div class="form-group mt-2 text-center">
                                 <label for="kids1" >Kids aged 2- years old</label>
                                 <select name="kid0_2yo" required>
-                                    <option selected disabled >Kids age 2-</option>
+                                    <option value="0" selected >Kids age 2-</option>
                                     <?php
                                     
-                                for ($i=0; $i<=8; $i++)
+                                for ($i=0; $i<=5; $i++)
                                 {
                                     ?>
                                     <option value="<?php echo $i;?>"><?php echo $i;?></option>
@@ -91,13 +92,13 @@
                             ?>
                                 </select>
                             </div>
-                            <div class="form-group mt-2">
+                            <div class="form-group mt-2 text-center">
                                 <label for="kids2" >Kids aged from 2 - 14 years old</label>
                                 <select name="kid2_14yo" required>
-                                    <option selected disabled>Kids age 2 to 14yo</option>
+                                    <option value="0" selected >Kids age 2 to 14yo</option>
 
                                     <?php
-                                for ($i=0; $i<=8; $i++)
+                                for ($i=0; $i<=5; $i++)
                                 {
                                     ?>
                                     <option value="<?php echo $i;?>"><?php echo $i;?></option>
@@ -106,13 +107,13 @@
                             ?>
                                 </select>
                             </div>
-                            <div class="form-group mt-2">
+                            <div class="form-group mt-2 text-center">
                                 <label for="kids3" >Kids aged from 14+ years old</label>
                                 <select name="kid14yo" required>
-                                    <option selected disabled>Kids age 14+</option>
+                                    <option value="0" selected >Kids age 14+</option>
 
                                     <?php
-                                for ($i=0; $i<=8; $i++)
+                                for ($i=0; $i<=5; $i++)
                                 {
                                     ?>
                                     <option value="<?php echo $i;?>"><?php echo $i;?></option>
@@ -130,13 +131,16 @@
                             <div class="col-auto my-1">
                                 <label class="mr-sm-2" for="add_bed">Additional Bed (25%/bed)</label>
                                 <select class="custom-select mr-sm-2" name="add_bed" required>
-                                    <option selected disabled>Additional Bed</option>
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
+                                    <option value="0" selected >Additional Bed</option>
+
+                                    <?php
+                                for ($i=0; $i<=5; $i++)
+                                {
+                                    ?>
+                                    <option value="<?php echo $i;?>"><?php echo $i;?></option>
+                                    <?php
+                                }
+                            ?>
                                 </select>
                             </div>
 
@@ -144,13 +148,16 @@
                             <div class="col-auto my-1">
                                 <label class="mr-sm-2" for="add_room">Additional Room (50%/room)</label>
                                 <select class="custom-select mr-sm-2" name="add_room" required>
-                                    <option selected disabled>Additional Room</option>
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
+                                    <option value="0" selected >Additional Room</option>
+
+                                    <?php
+                                for ($i=0; $i<=5; $i++)
+                                {
+                                    ?>
+                                    <option value="<?php echo $i;?>"><?php echo $i;?></option>
+                                    <?php
+                                }
+                            ?>
                                 </select>
                             </div>
                         </div>
